@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+}
+
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 40%;
+  background-color: #f7f7f7;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.numbers div {
+  width: 35px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.numbers .active {
+  background-color: #7950f2;
+  color: #fff;
+}
+
+.message {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px 0;
+  margin-top: 15px;
+}
+
+.buttons {
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.buttons button {
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 7px;
+}
+
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 40px;
+  color: inherit;
+}
+
+.close:hover {
+  color: #7950f2;
+}
